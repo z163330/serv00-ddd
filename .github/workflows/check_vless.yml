@@ -26,8 +26,7 @@ jobs:
       - name: 执行Python脚本恢复vless服务并发送Telegram消息
         env:
           ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN1 }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        
         run: |
           python3 vless/recover_vless.py
 
